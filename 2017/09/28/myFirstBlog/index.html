@@ -1,0 +1,589 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    
+
+    <title>myFirstBlog | </title>
+    <meta name="author" content="John Doe">
+    
+    <meta name="description" content="swiper介绍
+Swiper 是一款免费以及轻量级的移动设备触控滑块的js框架,常用于移动端网站的内容触摸滑动，是纯javascript打造的滑动特效插件，面向手机、平板电脑等移动终端，能实现触屏焦点图、触屏Tab切换、触屏多图切换等常用效果，开源、免费、稳定、使用简单、功能强大，是架构移动终端网">
+    
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:title" content="myFirstBlog"/>
+    <meta property="og:site_name" content="Hexo"/>
+
+    
+    <meta property="og:image" content=""/>
+    
+
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/lib/materialize.min.css">
+    <link rel="stylesheet" href="/css/lib/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+
+    
+        <link rel="stylesheet" href="/css/lib/prettify-tomorrow-night-eighties.css" type="text/css">
+    
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+
+<body>
+    <img src="/weixin_favicon.png" style="position: absolute; left: -9999px; opacity: 0; filter: alpha(opacity=0);">
+
+    <nav class="indigo">
+    <div class="nav-wrapper">
+        <a href="#" data-activates="main-menu" class="button-collapse">
+            <i class="fa fa-navicon"></i>
+        </a>
+        <div class="">
+            <a href="/" class="brand-logo hide-on-med-and-down">Hexo</a>
+            <ul class="right hide-on-med-and-down">
+                
+                    <li>
+                        <a class="menu-home " href="/" >
+                            <i class="fa fa-home "></i>
+                            
+                            Home
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-archive " href="/archives" >
+                            <i class="fa fa-archive "></i>
+                            
+                            Archives
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-category category-menu" href="javascript:;" data-activates="category-menu" >
+                            <i class="fa fa-bookmark "></i>
+                            
+                            Categories
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-reading " href="/reading" >
+                            <i class="fa fa-book "></i>
+                            
+                            Reading
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-about " href="/about" >
+                            <i class="fa fa-user "></i>
+                            
+                            About
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-search modal-trigger " href="#search" >
+                            <i class="fa fa-search "></i>
+                            
+                            Search
+                        </a>
+                    </li>
+                
+            </ul>
+            <div>
+    <ul class="side-nav indigo darken-1" id="main-menu">
+        
+
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-home " href="/" >
+                    <i class="fa fa-home "></i>
+                    
+                    Home
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-archive " href="/archives" >
+                    <i class="fa fa-archive "></i>
+                    
+                    Archives
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-category category-menu" href="javascript:;" data-activates="category-menu" >
+                    <i class="fa fa-bookmark "></i>
+                    
+                    Categories
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-reading " href="/reading" >
+                    <i class="fa fa-book "></i>
+                    
+                    Reading
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-about " href="/about" >
+                    <i class="fa fa-user "></i>
+                    
+                    About
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-search modal-trigger " href="#search" >
+                    <i class="fa fa-search "></i>
+                    
+                    Search
+                </a>
+            </li>
+        
+    </ul>
+
+    <ul class="side-nav indigo darken-1" id="category-menu">
+    
+
+            
+
+    </ul>
+</div>
+
+        </div>
+    </div>
+</nav>
+
+<div id="search" class="modal search-modal">
+    <div class="row">
+        <div class="input-field col s12">
+              <input id="search-input" type="text">
+              <label for="search-input">Search</label>
+        </div>
+
+    </div>
+    <div id="search-result" class="search-result col s12">
+
+    </div>
+</div>
+
+
+    <main>
+        <div class="container main-container">
+    <nav class="page-nav hide-on-small-only">
+    <div class="nav-wrapper indigo">
+        <span class="breadcrumb">Current page(Categories)</span>
+        
+            
+
+        
+
+        
+    </div>
+</nav>
+
+<article>
+    <div class="card">
+        <div class="card-content">
+            
+
+            <div class="article-title">
+                
+    
+        <h1>myFirstBlog</h1>
+    
+
+
+            </div>
+            <time class="pink-link-context" datetime="2017-09-28T12:22:47.000Z"><a href="/2017/09/28/myFirstBlog/">2017-09-28</a></time>
+
+            <span id="busuanzi_container_page_pv" class="read-times-container">
+    <i class="fa fa-eye"></i>
+    <span id="busuanzi_value_page_pv"></span>
+</span>
+
+            
+
+            <div class="toc pink-link-context hide-on-med-and-down">
+    <ol class="section table-of-contents"><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#swiper介绍"><span class="section table-of-contents-text">swiper介绍</span></a></li><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#swiper基础代码示例"><span class="section table-of-contents-text">swiper基础代码示例</span></a></li><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#swiper常用参数介绍"><span class="section table-of-contents-text">swiper常用参数介绍</span></a></li></ol>
+</div>
+
+
+            <div class="entry pink-link-context">
+                <h1 id="swiper介绍"><a href="#swiper介绍" class="headerlink" title="swiper介绍"></a>swiper介绍</h1><blockquote>
+<p><strong>Swiper 是一款免费以及轻量级的移动设备触控滑块的js框架,常用于移动端网站的内容触摸滑动，是纯javascript打造的滑动特效插件，面向手机、平板电脑等移动终端，能实现触屏焦点图、触屏Tab切换、触屏多图切换等常用效果，开源、免费、稳定、使用简单、功能强大，是架构移动终端网站的重要选择！</strong></p>
+</blockquote>
+<p><strong><em><a href="http://www.swiper.com.cn/" target="_blank" rel="external">swiper中文网地址</a></em></strong></p>
+<h1 id="swiper基础代码示例"><a href="#swiper基础代码示例" class="headerlink" title="swiper基础代码示例"></a>swiper基础代码示例</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html lang=&quot;en&quot;&gt;</div><div class="line">&lt;head&gt;</div><div class="line">  &lt;meta charset=&quot;UTF-8&quot;&gt;</div><div class="line">  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</div><div class="line">  &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;</div><div class="line">  &lt;link rel=&quot;stylesheet&quot; href=&quot;swiper-3.4.2.min.css&quot; /&gt;</div><div class="line">  &lt;title&gt;Document&lt;/title&gt;</div><div class="line">&lt;/head&gt;</div><div class="line">&lt;style&gt;</div><div class="line">  .swiper-container&#123;</div><div class="line">    width:600px;</div><div class="line">    height:300px;</div><div class="line">  &#125;</div><div class="line">  .swiper-container-horizontal&gt;.swiper-pagination-progress&#123;</div><div class="line">    height:10px;</div><div class="line">    bottom:0;</div><div class="line">    left:0;</div><div class="line">  &#125;</div><div class="line">  .swiper-pagination-bullet&#123;</div><div class="line">    opacity: 1;</div><div class="line">  &#125;</div><div class="line">&lt;/style&gt;</div><div class="line">&lt;body&gt;</div><div class="line">  &lt;div class=&quot;swiper-container&quot;&gt;</div><div class="line">      &lt;div class=&quot;swiper-wrapper&quot;&gt;</div><div class="line">          &lt;div class=&quot;swiper-slide&quot;&gt;&lt;img src=&quot;nature1.jpg&quot; /&gt;&lt;/div&gt;</div><div class="line">          &lt;div class=&quot;swiper-slide&quot;&gt;&lt;img src=&quot;nature2.jpg&quot; /&gt;&lt;/div&gt;</div><div class="line">          &lt;div class=&quot;swiper-slide&quot;&gt;&lt;img src=&quot;nature3.jpg&quot; /&gt;&lt;/div&gt;</div><div class="line">          &lt;div class=&quot;swiper-slide&quot;&gt;&lt;img src=&quot;nature4.jpg&quot; /&gt;&lt;/div&gt;</div><div class="line">          &lt;div class=&quot;swiper-slide&quot;&gt;&lt;img src=&quot;nature5.jpg&quot; /&gt;&lt;/div&gt;</div><div class="line">          &lt;div class=&quot;swiper-slide&quot;&gt;&lt;img src=&quot;nature6.jpg&quot; /&gt;&lt;/div&gt;</div><div class="line">      &lt;/div&gt;</div><div class="line">      &lt;!-- 如果需要分页器 --&gt;</div><div class="line">      &lt;div class=&quot;swiper-pagination&quot;&gt;&lt;/div&gt;</div><div class="line"></div><div class="line">      &lt;!-- 如果需要导航按钮 --&gt;</div><div class="line">      &lt;div class=&quot;swiper-button-prev&quot;&gt;&lt;/div&gt;</div><div class="line">      &lt;div class=&quot;swiper-button-next&quot;&gt;&lt;/div&gt;</div><div class="line"></div><div class="line">      &lt;!-- 如果需要滚动条 --&gt;</div><div class="line">      &lt;!-- &lt;div class=&quot;swiper-scrollbar&quot;&gt;&lt;/div&gt; --&gt;</div><div class="line">  &lt;/div&gt;</div><div class="line">&lt;/body&gt;</div><div class="line">&lt;script src=&quot;swiper-3.4.2.min.js&quot;&gt;&lt;/script&gt;</div><div class="line">&lt;script&gt;</div><div class="line">  var mySwiper=new Swiper(&apos;.swiper-container&apos;,&#123;</div><div class="line">    // direction:&apos;vertical&apos;</div><div class="line">    // loop:true,</div><div class="line">    // autoplay:200,</div><div class="line">    prevButton:&apos;.swiper-button-prev&apos;,</div><div class="line">    nextButton:&apos;.swiper-button-next&apos;,</div><div class="line">    pagination:&apos;.swiper-pagination&apos;,</div><div class="line">    paginationClickable:true，</div><div class="line">    fade:&apos;fade&apos;</div><div class="line">  &#125;)</div><div class="line">&lt;/script&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
+<h1 id="swiper常用参数介绍"><a href="#swiper常用参数介绍" class="headerlink" title="swiper常用参数介绍"></a>swiper常用参数介绍</h1><ol>
+<li><strong>direction</strong>:设置轮播方向是水平还是垂直</li>
+</ol>
+<ul>
+<li>取值：horizontal表示水平方向-默认的</li>
+<li>vertical表示垂直方向</li>
+</ul>
+<ol>
+<li><strong>loop</strong>:是否循环播放</li>
+</ol>
+<ul>
+<li>取值:false(默认的，不循环)</li>
+<li>true(循环播放)</li>
+</ul>
+<ol>
+<li><strong>autoplay</strong>:控制是否自动播放轮播</li>
+</ol>
+<ul>
+<li>取值:如果是大于0的数字则表示自动播放的间隔时间</li>
+<li>如果不写或取值0则表示不自动切换</li>
+</ul>
+<ol>
+<li><strong>autoplayDisableOnInteraction</strong>:是否禁止autoplay</li>
+</ol>
+<ul>
+<li>取值:true(默认,禁止自动播放)</li>
+<li>false(不禁止自动播放)</li>
+</ul>
+<ol>
+<li><strong>prevButton,nextButton</strong>是轮播图上的左右两个按钮</li>
+</ol>
+<ul>
+<li><strong>prevButton</strong>的值是上一个按钮的容器</li>
+<li><strong>nextButton</strong>的值是下一个按钮的容器</li>
+</ul>
+<ol>
+<li><strong>pagination</strong>—分页器,即我们常见的轮播图下面的小圆点</li>
+</ol>
+<ul>
+<li>如果要加分页器则需要在js中写上放置分页器的容器</li>
+</ul>
+<ol>
+<li><strong>paginationClickable</strong>:是否使用用分页器单击切换图片</li>
+</ol>
+<ul>
+<li>取值:true(启用)</li>
+<li>false(默认,不启用)</li>
+</ul>
+<ol>
+<li>paginationType:分页器的类型</li>
+</ol>
+<ul>
+<li>取值:bullets-圆点(默认)</li>
+<li>Fraction-分式 </li>
+<li>progress-进度条</li>
+<li>custom-自定义</li>
+</ul>
+<ol>
+<li><strong>effect</strong>:图片切换时的过渡效果</li>
+</ol>
+<ul>
+<li>取值:fade-淡入效果</li>
+<li><p>取值：false(默认,不启用淡出)</p>
+</li>
+<li><p>true(启用淡出）</p>
+</li>
+<li style="list-style: none"><input type="checkbox" checked> 关闭淡出。过渡时，原slide透明度为1（不淡出），过渡中的slide透明度从0-&gt;1（淡入），其他slide透明度0。</li>
+<li style="list-style: none"><input type="checkbox" checked> 开启淡出。过渡时，原slide透明度从1-&gt;0（淡出），过渡中的slide透明度从0-&gt;1（淡入），其他slide透明度0。</li>
+<li>cube-方块效果</li>
+<li style="list-style: none"><input type="checkbox" checked> 可选参数: slideShadows：开启slide阴影。默认 true。</li>
+<li style="list-style: none"><input type="checkbox" checked> shadow： 开启投影。默认 true。</li>
+<li style="list-style: none"><input type="checkbox" checked> shadowOffset：投影距离。默认 20，单位px。</li>
+<li style="list-style: none"><input type="checkbox" checked> shadowScale： 投影缩放比例。默认0.94。</li>
+<li>coverflow-3d流(覆盖流）</li>
+<li style="list-style: none"><input type="checkbox" checked> 可选参数:rotate：slide做3d旋转时Y轴的旋转角度。默认50。</li>
+<li style="list-style: none"><input type="checkbox" checked> stretch:每个slide之间的拉伸值，越大slide靠得越紧。 默认0。</li>
+<li style="list-style: none"><input type="checkbox" checked> depth:slide的位置深度。值越大z轴距离越远，看起来越小。 默认100。</li>
+<li style="list-style: none"><input type="checkbox" checked> modifier:depth和rotate和stretch的倍率，相当于depth<em>modifier、rotate</em>modifier、stretch*modifier:值越大这三个参数的效果越明显。默认1。</li>
+<li style="list-style: none"><input type="checkbox" checked> slideShadows:开启slide阴影。默认 true。</li>
+</ul>
+<ul>
+<li>flip-翻转效果</li>
+<li style="list-style: none"><input type="checkbox" checked> 参数:slideShadows：slides的阴影。默认true。</li>
+<li style="list-style: none"><input type="checkbox" checked> limitRotation：限制最大旋转角度为180度，默认true。</li>
+</ul>
+
+                
+
+
+<p class="pink-link-context">
+    <a href="/2017/09/28/hello-world/" rel="next" title="Hello World">
+    Next: Hello World
+  </a>
+</p>
+
+
+            </div>
+			
+        </div>
+    </div>
+</article>
+
+
+
+
+
+
+</div>
+
+        <div class="fixed-action-btn float-sitemap">
+    <a class="btn-floating btn-large pink">
+      <i class="fa fa-caret-square-o-up"></i>
+    </a>
+    <ul>
+      <li><a class="btn-return-top btn-floating waves-effect green" title="Return to top"><i class="fa fa-arrow-circle-o-up"></i></a></li>
+      <li><a class="btn-floating waves-effect button-collapse yellow darken-1"  data-activates="main-menu" title="Menu"><i class="fa fa-navicon"></i></a></li>
+    </ul>
+  </div>
+
+    </main>
+    <footer class="page-footer indigo darken-1">
+    
+
+    <div class="footer-copyright pink-link-context">
+        <div class="container">
+            © 2016 example.com, All rights reserved.
+            <p class="right" style="margin-top: 0;">Blog powered by <a href="https://hexo.io">Hexo</a> | Theme <a href="https://github.com/raytaylorlin/hexo-theme-raytaylorism">raytaylorism</a></p>
+        </div>
+    </div>
+</footer>
+
+
+    <noscript>
+    <div class="noscript">
+        <p class="center-align">当前网速较慢或者你使用的浏览器不支持博客特定功能，请尝试刷新或换用Chrome、Firefox等现代浏览器</p>
+    </div>
+</noscript>
+<div class="noscript">
+    <p class="center-align">当前网速较慢或者你使用的浏览器不支持博客特定功能，请尝试刷新或换用Chrome、Firefox等现代浏览器</p>
+</div>
+
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/materialize.min.js"></script>
+
+<script>
+    (function($) {
+        $(document).ready(function() {
+            // 隐藏禁用javascript（针对微信内置浏览器）的提示
+            $('.noscript').hide();
+
+            // 图片缩放效果
+            var $imgs = $('img').not('.slider-image').not('.avatar-image').not('.carousel-image').not('.card-cover-image').not('.qrcode');
+
+            // 给图片加上点击放大效果（materialbox插件）
+            $imgs.addClass('materialboxed').each(function(i, el) {
+                $(this).attr('data-caption', $(this).attr('alt') || ' ');
+            }).materialbox();
+
+            // 优化表格的显示
+            $('table').each(function() {
+                var $table = $(this);
+                // 除去多行代码的情况
+                if ($table.find('pre').length == 0) {
+                    $table.addClass('responsive-table striped bordered');
+                }
+            });
+
+            // 首页幻灯片
+            $('.slider').slider({indicators: true, full_width: true, interval: 8000});
+
+            $(".button-collapse").sideNav();
+            $(".category-menu").sideNav();
+
+            // 针对gallery post
+            $('.carousel').carousel({full_width: true});
+            $('.carousel-control.prev').click(function() {
+                $('.carousel').carousel('prev');
+            });
+            $('.carousel-control.next').click(function() {
+                $('.carousel').carousel('next');
+            });
+
+            // 文章目录
+            $('article').not('.simple-article').find('h1').add('h2').add('h3').add('h4').add('h5').add('h6').scrollSpy();
+
+            // 目录随屏幕滚动（防止目录过长越过footer）
+            var $toc = $('.toc');
+            var scrollTargetTop = 0;
+            $(window).scroll(function() {
+                var $activeLink = $toc.find('a.active.section');
+                if ($(window).scrollTop() < 100) {
+                    scrollTargetTop = 0;
+                } else {
+                    if ($activeLink[0]) {
+                        scrollTargetTop = $activeLink.offset().top - $toc.offset().top;
+                    }
+                }
+                $toc.css('top', '-' + scrollTargetTop + 'px');
+            });
+
+            // 修正文章目录的left-border颜色
+            var color = $('.table-of-contents-text').css('color');
+            $('.table-of-contents-link').css('border-left-color', color);
+
+            // 针对移动端做的优化：FAB按钮点击一下收回
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                $('.fixed-action-btn').addClass('click-to-toggle');
+            }
+            // 回到顶部
+            $('.btn-return-top').click(function() {
+                $('body, html').animate({
+                    scrollTop: 0
+                }, 500);
+            });
+
+            // 重置读书页面的Tab标签页的颜色
+            $('li.tab a').hover(function() {
+                $(this).toggleClass('text-lighten-4');
+            });
+            $('.indicator').addClass('pink lighten-2');
+
+            
+
+            // 搜索功能
+            $('.modal-trigger').leanModal({
+                // 打开搜索框时自动聚焦
+                ready: function() {
+                    if ($('#search').is(":visible")) {
+                        $('#search-input').focus();
+                    }
+                }
+            });
+            var searchXml = "";
+            if (searchXml.length == 0) {
+             	searchXml = "search.xml";
+            }
+            var searchPath = "/" + searchXml;
+            initSearch(searchPath, 'search-input', 'search-result');
+        });
+
+        // 初始化搜索与匹配函数
+        var initSearch = function(path, search_id, content_id) {
+            'use strict';
+            $.ajax({
+                url: path,
+                dataType: "xml",
+                success: function(xmlResponse) {
+                    // get the contents from search data
+                    var datas = $("entry", xmlResponse).map(function() {
+                        return {
+                            title: $("title", this).text(),
+                            content: $("content", this).text(),
+                            url: $("url", this).text()
+                        };
+                    }).get();
+                    var $input = document.getElementById(search_id);
+                    var $resultContent = document.getElementById(content_id);
+                    $input.addEventListener('input', function() {
+                        var str = '<ul class=\"search-result-list\">';
+                        var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                        $resultContent.innerHTML = "";
+                        if (this.value.trim().length <= 0) {
+                            return;
+                        }
+                        // perform local searching
+                        datas.forEach(function(data) {
+                            var isMatch = true;
+                            var content_index = [];
+                            var data_title = data.title.trim().toLowerCase();
+                            var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                            var data_url = data.url;
+                            var index_title = -1;
+                            var index_content = -1;
+                            var first_occur = -1;
+                            // only match artiles with not empty titles and contents
+                            if (data_title != '' && data_content != '') {
+                                keywords.forEach(function(keyword, i) {
+                                    index_title = data_title.indexOf(keyword);
+                                    index_content = data_content.indexOf(keyword);
+                                    if (index_title < 0 && index_content < 0) {
+                                        isMatch = false;
+                                    } else {
+                                        if (index_content < 0) {
+                                            index_content = 0;
+                                        }
+                                        if (i == 0) {
+                                            first_occur = index_content;
+                                        }
+                                    }
+                                });
+                            }
+                            // show search results
+                            if (isMatch) {
+                                keywords.forEach(function(keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    data_title = data_title.replace(regS, "<span class=\"search-keyword pink lighten-2\">" + keyword + "</span>");
+                                });
+
+                                str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                                var content = data.content.trim().replace(/<[^>]+>/g, "");
+                                if (first_occur >= 0) {
+                                    // cut out 100 characters
+                                    var start = first_occur - 20;
+                                    var end = first_occur + 80;
+                                    if (start < 0) {
+                                        start = 0;
+                                    }
+                                    if (start == 0) {
+                                        end = 100;
+                                    }
+                                    if (end > content.length) {
+                                        end = content.length;
+                                    }
+                                    var match_content = content.substring(start, end);
+                                    // highlight all keywords
+                                    keywords.forEach(function(keyword) {
+                                        var regS = new RegExp(keyword, "gi");
+                                        match_content = match_content.replace(regS, "<span class=\"search-keyword pink lighten-2\">" + keyword + "</span>");
+                                    });
+
+                                    str += "<p class=\"search-result\">..." + match_content + "...</p>"
+                                }
+                                str += "</li>";
+                            }
+                        });
+                        str += "</ul>";
+                        $resultContent.innerHTML = str;
+                    });
+                }
+            });
+        }
+    })(jQuery);
+</script>
+
+
+<script src="/js/prettify.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("pre").addClass("prettyprint");
+        prettyPrint();
+    });
+</script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script type="text/javascript" async
+  src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+
+</body>
+</html>
